@@ -1,0 +1,978 @@
+/* --------------------------------- HOME ------------------------------------*/
+/* --------------------------------- HOME ------------------------------------*/
+/* --------------------------------- HOME ------------------------------------*/
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(0, 0, 0);
+}
+
+h1, h2,h3{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+p, li, ul, a{
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 22px;
+ 
+}
+ 
+a{ 
+    text-decoration:none; 
+    } 
+    
+    ul li{  
+    list-style:none; 
+    } 
+    
+
+ /*NAV*/ 
+  
+ #bar{ 
+    background-color: #000000;  
+    height:50px; 
+    width:100%; 
+    position:fixed; 
+    z-index: 2;
+    } 
+    
+    #bar #logo{ 
+    margin-left:12px; 
+    } 
+    
+    #bar #logo .log{  
+    color: #ffffff; 
+    } 
+    
+    /*NAV HAMB*/ 
+    
+    nav{ 
+   
+    position:fixed; 
+    width:100%; 
+    margin-top:50px; 
+    visibility:hidden; 
+    overflow:auto; 
+    background: black; 
+    z-index: 4;
+    } 
+    
+   
+    
+    nav ul li a { 
+    padding: 16px 0 16px 32px; 
+    display:block; 
+    color:#fbfafa; 
+    font-size:16px; 
+    } 
+    
+    nav ul li ul { 
+    padding-left:0;  
+    padding-bottom:0; 
+    } 
+    
+    nav ul li ul li a { 
+    font-size:16px; 
+    padding:10px 0 10px 55px; 
+    border:hidden;  
+    } 
+    
+    #nav ul li:hover > ul 
+      { 
+          display:block; 
+    border: 2px solid #FFF; 
+    color:#000000; 
+      } 
+     
+    
+      #nav ul li:hover > ul 
+      { 
+          display:block 
+      } 
+    
+    #hamburger { 
+    display: none; 
+    } 
+    
+    .menuicon { 
+    position:fixed; 
+    height:50px; 
+    width:50px; 
+    right: 0px; 
+    z-index:3; 
+    color: #ffffff;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    } 
+    
+    @media screen and (max-width: 700px){ 
+    
+    nav ul li a:hover { 
+    background-color: #ffffff; 
+    color: black; 
+    } 
+    
+    .menu-visibility{
+        display: flex;
+    }
+    } 
+    
+    #hamburger:checked ~ .menu-visibility { 
+    visibility:visible; 
+    } 
+    
+    /* NAV GRANDE */ 
+    
+    @media screen and (min-width: 700px){ 
+    
+    .menuicon{ 
+    display:none; 
+    } 
+    
+    #bar #logo{ 
+    float:left; 
+    margin-left:25px; 
+    } 
+    
+    nav{ 
+    z-index:3; 
+    margin-top:0px; 
+    height:auto; 
+    background-color:transparent; 
+    transition:none; 
+    width:auto; 
+    float:right; 
+    right:12px; 
+    visibility:visible; 
+    overflow:inherit; 
+    } 
+    
+    nav ul{ 
+    padding:0; 
+    } 
+    
+    nav ul li a { 
+    padding:0; 
+    display:inline; 
+    font-size:16px; 
+    color: #fff; 
+    } 
+    
+    nav ul li:hover { 
+    
+    border: 2px solid #FFF; 
+    color:#000000; 
+    } 
+    
+    
+    nav ul li {  
+    margin:0; 
+    float:left; 
+    position:relative; 
+    padding:0 16px; 
+    } 
+    
+    /*tendina*/ 
+    
+    nav ul li ul {  
+    position:fixed; 
+    height:0; 
+    overflow:hidden; 
+    background-color: #000000
+    } 
+    
+    nav ul li:hover ul{ 
+    height:auto; 
+    padding-top: 12px; 
+    margin-top: 2px; 
+    position: absolute; 
+      left: -35px;  
+    } 
+    
+    nav ul li ul li { 
+    font-size: 14px; 
+    font-weight: normal; 
+    float:none; 
+    padding:0; 
+    min-width: 150px; 
+    } 
+    
+    nav ul li ul li a { 
+    padding: 16px 32px; 
+    display: block; 
+    background-color: #000000; 
+    color: #ffffff; 
+    font-weight: normal; 
+    } 
+    
+    }
+
+/* NAV*/
+   
+   
+    /* Section hero*/
+
+.hero {
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.hero h1{
+    font-size: 100px;
+    margin-bottom: 0px;
+    margin-top: 0px; 
+    color: #FFF;
+}
+.puls{
+    display: flex;
+  width: 230px;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 145, 0, 0);
+}
+
+.pul{
+    width: 100px;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.pul:hover{
+    border: solid 3px;
+    background-color: rgb(253, 253, 253);
+}
+
+.pull{
+    width: 100px;
+   height: 30px;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   background-color: rgb(255, 255, 255);
+  
+}
+
+.pull:hover{
+    background-color: rgb(0, 0, 0);
+    border: solid 2px white;
+}
+
+.puls a{
+    text-decoration: none; 
+    color: #ffffff;
+    height: 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+
+.puls a:hover{ 
+    color: #000000;
+}
+
+.pull a{
+    text-decoration: none; 
+    color: #000000;
+    height: 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+
+.pull a:hover{
+   
+    color: #ffffff;
+}
+
+@media screen and (max-width: 500px) {
+    .hero {
+        height: 400px;
+       
+    }
+
+    .hero h1{
+       
+        color: #f11313;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+   
+
+    .hero h1{
+        font-size: 70px;
+    }
+    
+}
+
+/* Section hero*/
+
+
+
+/* Main*/
+
+.contnomi{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    border-top: 4px solid #FFF;
+    border-bottom: 4px solid #FFF;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+ #cerchio{
+        width:10px;
+        height:10px;
+        border-radius:50px;
+
+    
+    }
+
+ .scroll{
+    white-space: nowrap;
+    margin: 0 2em;
+    display: flex;
+ }   
+ 
+
+.scroll div{
+    display: flex;
+    gap: 3em;
+}
+
+.scroll a {
+ font-size: 14px;
+ color: #f2f2f2;
+ font-weight: bold;
+
+}
+
+.sxdx{
+    animation: sxdx 25s infinite linear;
+    display: flex;
+    align-items: center;
+}
+
+@keyframes sxdx {
+    from{
+        transform: translate(0%);
+    }
+    to {
+        transform: translate(-50%);
+    }
+    
+}
+
+.cards{
+display: flex;
+justify-content: space-around;
+flex-direction: row;
+
+}
+
+.card{
+    width: 20em;
+    height: 25em;
+    position: relative;
+    margin: 0 1em;
+    background-size: cover;
+    color: #fff;
+    margin: 50px;
+}
+
+.card .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.card:hover .overlay{
+    opacity: 1;
+}
+
+.card .btn {
+    padding: 0.6em 1.3em;
+    text-decoration: none;
+    color: black;
+    border: 2px #000000 solid;
+    letter-spacing: 1px;
+
+}
+
+.card .btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.card .btn, .card h1{
+    transition: 0.3s;
+    transform: translateY(-20px);
+}
+
+.card:hover .btn {
+    transform: translate(0);
+}
+
+.pp{
+    color: #fff;
+}
+
+.pa{
+    color: #ffffff;
+    font-size: 70px;
+    margin-bottom: 0px;
+}
+
+.rect {
+    height: 400px;
+    color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.rec a{
+    text-decoration: none; 
+    color: #000000; 
+    font-size: 12px;
+}
+
+.rec{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    border: 4px solid #FFF;
+    padding: 30px 80px;
+}
+
+.rec a:hover{
+        color: #ffffff; 
+    }
+
+.scopri{
+    margin-left: 75px; 
+    margin-bottom: 75px;
+}
+
+@media screen and (max-width: 900px) { 
+    main div.cards{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+   .scopri{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+}
+
+/*MAIN*/
+
+
+/*FOOTER*/
+
+.foter {
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration:none;
+    font-size:10px;
+    
+
+}
+
+.footer-links ul li{
+    list-style: none;
+   
+}
+
+.footer-links ul a{
+ text-decoration: none;
+ color: #000000;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-links{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-links ul{
+    display: flex;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.footer-links ul li{
+    padding-left: 10px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.footer-links ul a:hover{
+    display:block; 
+    border-bottom: 2px solid #000000;
+    transition: 1s; 
+    color:#000000;
+    text-align: center; 
+}
+
+/*FOOTER*/
+
+/* --------------------------------- HOME ------------------------------------*/
+/* --------------------------------- HOME ------------------------------------*/
+/* --------------------------------- HOME ------------------------------------*/
+
+
+/* --------------------------------NELMONDO ------------------------------------*/
+/* --------------------------------NELMONDO ------------------------------------*/
+/* --------------------------------NELMONDO ------------------------------------*/
+
+
+
+
+.introduzione p{
+color:white;
+text-align: left;
+margin: 50px;
+padding-left: 70px;
+padding-right: 70px;
+font-family: 'Noto Sans JP', sans-serif; 
+
+}
+
+.introduzione h2{
+    text-align: center;
+    color: white;
+    padding: 50px;
+    display: flex;
+    justify-content: flex-start;
+    font-size:50px;
+     margin:-20px;
+     margin-top: 50px;
+     font-size: 48px;
+}
+
+.Immagine{
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+    width: 100%;
+}
+
+
+
+
+main div.cardsmondo{
+    display: flex;
+    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+   
+.cardsmondo{
+    margin: 50px;
+    padding: 10px;
+}
+   
+
+
+/* main*/   
+     
+     @media (max-width: 900px) { 
+        main div.cardsmondo{
+            display: flex;
+            align-items: center;
+            flex-direction: column
+        }
+       
+    }
+
+  
+
+    @media (max-width: 1300px) { 
+        main div.cardsmondo{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+
+
+
+
+#bremondo{
+    word-wrap: break-word;
+    width: 1000px;
+  
+}
+
+
+@media (max-width: 1000px){
+ 
+        .introduzione{
+            font-size: small;
+        }
+        
+       
+
+        .introduzione h2{
+            font-size: 40px;
+
+        }
+    
+        .introduzione p{
+            
+            margin: 100px;
+            
+            
+            }
+       
+}
+
+
+@media (max-width: 800px){
+  
+    .introduzione h2{
+        font-size: 40px;
+        padding: 0px;
+
+    }
+        #bremondo{
+            width: 500px;
+          
+        }
+
+
+}
+
+
+/* --------------------------------NELMONDO ------------------------------------*/
+/* --------------------------------NELMONDO ------------------------------------*/
+/* --------------------------------NELMONDO ------------------------------------*/
+
+/* --------------------------------MISSION ------------------------------------*/
+/* --------------------------------MISSION ------------------------------------*/
+/* --------------------------------MISSION ------------------------------------*/
+
+.mission{
+    background-color: #262F38;
+    padding:100px;
+    margin:50px;
+}
+
+
+.breaky{
+    display: flex;
+    justify-content: center;
+}
+
+#break{
+    word-wrap: break-word;
+    width: 500px;
+  word-wrap: break-word;
+  
+}
+
+
+@media (max-width: 800px){
+ 
+        .sticte{
+            font-size: small;
+        }
+        #break{
+            width: 300px;
+          
+        }
+       
+}
+
+
+@media (max-width: 600px){
+  
+        
+    
+
+        .mission{
+            
+            padding:50px;
+            margin:50px;
+        }
+}
+
+
+/* --------------------------------MISSION ------------------------------------*/
+/* --------------------------------MISSION ------------------------------------*/
+/* --------------------------------MISSION ------------------------------------*/
+
+
+/* --------------------------------LETALK ------------------------------------*/
+/* --------------------------------LETALK ------------------------------------*/
+/* --------------------------------LETALK ------------------------------------*/
+
+
+.containeremail {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #000000;
+    border: rgb(255, 255, 255) solid 7px;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+input[type="text"], input[type="email"] {
+        width: 96%;
+        padding: 10px;
+        margin-bottom: 20px;
+        background-color: #ffffff;
+        border: white solid 4px;
+}
+input[type="submit"] {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #ffffff;
+}
+
+
+
+/* --------------------------------LETALK------------------------------------*/
+/* --------------------------------LETALK------------------------------------*/
+/* --------------------------------LETALK------------------------------------*/
+
+
+
+/* --------------------------------CHISIAMO------------------------------------*/
+/* --------------------------------CHISIAMO------------------------------------*/
+/* --------------------------------CHISIAMO------------------------------------*/
+
+.mis{
+    background-color: #ffffff;
+    padding:100px;
+    margin:50px;
+}
+
+
+.breakychi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#breakchi{
+    word-wrap: break-word;
+    width: 500px;
+}
+
+
+.progettoa{
+    height: 400px;color: #f2f2f2;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.proget{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 4px solid #FFF;
+    padding: 30px 80px;
+}
+
+
+@media (max-width: 1200px){
+
+    .breakychi{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        flex-direction: column;
+    }
+
+    .proget{
+        margin-bottom: 50px;
+    }
+    
+}
+
+@media (max-width: 800px){
+ 
+    .sticte{
+        font-size: small;
+    }
+    #breakchi{
+        width: 300px;
+        align-items: center;
+        flex-direction: column;
+      
+    }
+
+}
+
+
+@media (max-width: 600px){
+
+    
+    #breakchi{
+       
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      
+    }
+    
+
+    .mis{
+        
+        padding:50px;
+        margin:50px;
+    }
+}
+/* --------------------------------CHISIAMO------------------------------------*/
+/* --------------------------------CHISIAMO------------------------------------*/
+/* --------------------------------CHISIAMO------------------------------------*/
+
+
+/* --------------------------------ITALIA------------------------------------*/
+/* --------------------------------ITALIA------------------------------------*/
+/* --------------------------------ITALIA------------------------------------*/
+
+
+ 
+   .slide1 img {
+    vertical-align: middle;
+  }
+  .carosello {
+    max-width: 50%;
+    position: relative;
+    margin: auto;
+    border:5px solid #ffffff;
+    box-shadow: 15px -15px 0px 0px #EC8596;
+  }
+  .prec, .succ {
+    cursor: pointer;
+    user-select:none;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height:40px;
+    border:2px solid #ffffff;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    transition: 0.5s ease;
+    border-radius:50%;
+    text-align: center;
+    line-height: 41px;
+    margin: -20px;
+  }
+  .succ {
+    right: 0;
+  }
+  .prec:hover, .succ:hover {
+    background-color: #ffffff;
+    color: black;
+    border:2px solid #000000;
+
+  }
+/* --------------------------------ITALIA------------------------------------*/
+/* --------------------------------ITALIA------------------------------------*/
+/* --------------------------------ITALIA------------------------------------*/
+
+/* --------------------------------Banksy------------------------------------*/
+/* --------------------------------Banksy------------------------------------*/
+/* --------------------------------Banksy------------------------------------*/
+.Banksyy{
+    background-color: white;
+    padding:250px;
+    margin:120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.square{
+    display: flex;
+    justify-content: center;
+}
+
+#square{
+    word-wrap: break-word;
+    width: 500px;
+  word-wrap: break-word;
+  line-height: 22px;
+  
+}
+
+/*QUOTE*/ 
+.quote-box { 
+    border: 1px solid white; 
+    background-color: #f9f9f9; 
+    max-width: 200px; 
+    width: 100%; 
+    margin: auto; 
+    margin-bottom: 30px; 
+} 
+   
+.quote-box p { 
+    border: 2px solid black; 
+    padding: 10px; 
+    font-size: small; 
+    line-height: 1; 
+    margin: 5px; 
+}
+
+
+/* --------------------------------Banksy------------------------------------*/
+/* --------------------------------Banksy------------------------------------*/
+/* --------------------------------Banksy------------------------------------*/
